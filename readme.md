@@ -25,6 +25,23 @@ db.users.remove({username:'mike'})
 ## 14. App & Middleware Setup
 
     langkah-lagkah install express-generator :
-    npm install -g express
-    npm install -g express-generator
-    express
+    npm install -g express@4.13.4
+    npm install -g express-generator@4.13.1
+
+    update package.json:
+        "mongodb": "*",
+        "mongoose": "*",
+        "connect-flash": "*",
+        "express-messages": "*",
+        "express-validator": "*",
+        "passport": "*",
+        "passport-local": "*",
+        "passport-http": "*",
+        "multer": "*"
+
+    kemudian pada terminal ketikan perintah: npm install
+
+    npm install express-session@1.13.0
+    npm install express-validator@5.3.0// ini di install jika terjadi error not a function
+
+    kemudian buak brwoser : http://localhost:3000/
