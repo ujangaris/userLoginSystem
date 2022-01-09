@@ -1,4 +1,4 @@
-#Section 4 : User Login System
+### Section 4 : User Login System
 
 ## 13.Getting Started With MongoDB Part B
 
@@ -7,6 +7,8 @@ switched to db nodeauth > db.createCollection('users')
 { "ok" : 1 }
 show collections
 users
+
+create users
 db.users.insert({name:'Ujang Arisandi', email:'ujangaja@gmail.com',username: 'ujang', password:'1234'})
 db.users.insert({name:'Bradin', email:'bradin@gmail.com',username: 'brad', password:'1234'})
 db.users.insert({name:'Mike', email:'mike@gmail.com',username: 'mike', password:'1234'})
@@ -19,3 +21,10 @@ db.users.update({username:'brad'}, {$set:{name:'Brad Traversy', email:'brad@gmai
 
 delete user
 db.users.remove({username:'mike'})
+
+## 14. App & Middleware Setup
+
+    langkah-lagkah install express-generator :
+    npm install -g express
+    npm install -g express-generator
+    express
