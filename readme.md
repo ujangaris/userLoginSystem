@@ -69,3 +69,9 @@
 
     pengujian pada register form : http://localhost:3000/users/register
     lakukan upload image kemudian namun tidak mengguanakn file send,jika berhasil akan ada data yang message pada terminal 'No Upload file'
+
+## 16. Register Form & Validation part 3 | final
+
+    pengujian pada register form : http://localhost:3000/users/register
+    lakukan register dengan mengisi seluruh form, jika berhasil tidak akan tampil alter notfikasi
+    jika dikosongkan akan tampil alert notfikasi

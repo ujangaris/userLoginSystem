@@ -27,8 +27,29 @@ router.post(
 
     if (req.file) {
       console.log('Uploading File...');
+      var profileimage = req.file.fielname;
     } else {
       console.log('No File Uploading...');
+      var profileimage = 'noimage.jpg';
+    }
+    // Form validator
+    req.checkBody('name', 'Name field is required').notEmpty();
+    req.checkBody('email', 'Email field is required').notEmpty();
+    req.checkBody('email', 'Email  is not valid').isEmail();
+    req.checkBody('username', 'Username field is required').notEmpty();
+    req.checkBody('password', 'Password field is required').notEmpty();
+    req
+      .checkBody('password2', 'Passwords do not match')
+      .equals(req.body.password);
+
+    // Check Errors
+    var errors = req.validationErrors();
+    if (errors) {
+      res.render('register', {
+        errors: errors,
+      });
+    } else {
+      console.log('No Errors');
     }
   }
 );
