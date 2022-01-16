@@ -25,7 +25,11 @@ router.post(
     var password = req.body.password;
     var password2 = req.body.password2;
 
-    console.log(req.file);
+    if (req.file) {
+      console.log('Uploading File...');
+    } else {
+      console.log('No File Uploading...');
+    }
   }
 );
 
