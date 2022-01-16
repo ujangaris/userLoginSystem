@@ -75,3 +75,37 @@
     pengujian pada register form : http://localhost:3000/users/register
     lakukan register dengan mengisi seluruh form, jika berhasil tidak akan tampil alter notfikasi
     jika dikosongkan akan tampil alert notfikasi
+
+## 17. Models & User Registration part 1
+
+    pengujian pada register form : http://localhost:3000/users/register
+    lakukan register dengan mengisi seluruh form , maka akan ke riderect ke halaman home/default dari routenya.
+
+    lakukan pengecekan ke database apakah data yang kita masukan berhasil.
+    pada terminal ketikan :
+        mongo
+        show dbs => untuk melihat database
+        use nodeauth => untuk masuk ke databse kita
+        db.users.find().pretty()
+        {
+        "_id" : ObjectId("61da8511942677ba55b80cf7"),
+        "name" : "Brad Traversy",
+        "email" : "brad@gmail.com",
+        "username" : "brad",
+        "password" : "1234"
+        }
+        {
+                "_id" : ObjectId("61da85f25968c5b89fee77fe"),
+                "name" : "Ujang Arisandi",
+                "email" : "ujangaja@gmail.com",
+                "username" : "ujang",
+                "password" : "1234"
+        }
+        {
+                "_id" : ObjectId("61e3cfae583eb38a7f234fb6"),
+                "username" : "ujang",
+                "password" : "admin0k8",
+                "email" : "ujangaja@gmail.com",
+                "name" : "Ujang Arisandi",
+                "__v" : 0
+        }
