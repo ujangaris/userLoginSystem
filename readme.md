@@ -59,3 +59,8 @@
 
 
     #note : jika ada perubahan restart server terlebih dahulu : npm start
+
+## 16. Register Form & Validation part 1
+
+    pengujian pada register form : http://localhost:3000/users/register
+    lakukan upload image kemudian send,jika berhasil akan ada data yang sesuai pada terminal
