@@ -109,3 +109,9 @@
                 "name" : "Ujang Arisandi",
                 "__v" : 0
         }
+
+## 17. Models & User Registration part 2 | flash message
+
+    pengujian pada register form : http://localhost:3000/users/register
+    lakukan register dengan mengisi seluruh form , maka akan ke riderect ke halaman home/default dari routenya.
+    jika berhasil ada alert menyesuaikan success dan danger

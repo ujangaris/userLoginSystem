@@ -62,6 +62,8 @@ router.post(
         if (err) throw err;
         console.log(user);
       });
+
+      req.flash('success', 'You are now registered and can login');
       res.location('/');
       res.redirect('/');
     }
