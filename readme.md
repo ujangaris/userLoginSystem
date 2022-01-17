@@ -115,3 +115,17 @@
     pengujian pada register form : http://localhost:3000/users/register
     lakukan register dengan mengisi seluruh form , maka akan ke riderect ke halaman home/default dari routenya.
     jika berhasil ada alert menyesuaikan success dan danger
+
+## 18. Password Hashing with BCrypt
+
+    Documentation: https://www.npmjs.com/package/bcrypt
+        npm install bcryptjs --save
+
+    lakukan pengujian pada brwoser dengan mengisi form register
+    dapat diliat pada terminal : http://localhost:3000/users/register
+        {
+        username: 'diki',
+        password: '$2a$10$jY2PWPL5wxRBpgpEO.z8..qY.SL/60VH10D4F3S7UoouSwr8pwENW',// ini tergenerate
+        email: 'diki@mail.com',
+        name: 'Diki Dikot',
+        }
