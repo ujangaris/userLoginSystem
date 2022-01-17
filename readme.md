@@ -160,3 +160,13 @@
         jika berhasil akan ada alert success
         note login akan berhasil pada user yang register setelah menggunakan hasing bcrypt
         jika gagal login coba lakukan register terlebih dahulu kemudian , login dengan user tersebut.
+
+## 20. Logout & Access Controll part 1
+
+    pengujian pada browser login :http://localhost:3000/users/login
+        login sebagai diki:
+            username: diki , password: admin0k8
+
+        jika berhasil akan ada alert success
+        note login akan berhasil pada user yang register setelah menggunakan hasing bcrypt
+        jika gagal login coba lakukan register terlebih dahulu kemudian , login dengan user tersebut.
