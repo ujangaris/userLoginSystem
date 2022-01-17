@@ -170,3 +170,16 @@
         jika berhasil akan ada alert success
         note login akan berhasil pada user yang register setelah menggunakan hasing bcrypt
         jika gagal login coba lakukan register terlebih dahulu kemudian , login dengan user tersebut.
+
+## 20. Logout & Access Controll part 2 | kondisi
+
+    dapat dilihat saat setelah merestart server button member akan hilang dikarenakan belum login
+
+    pengujian pada browser login :http://localhost:3000/users/login
+        login sebagai diki:
+            username: diki , password: admin0k8
+
+        jika berhasil akan ada alert success, dan akan ada button member , kemudian button login tidak ada.
+
+        note login akan berhasil pada user yang register setelah menggunakan hasing bcrypt
+        jika gagal login coba lakukan register terlebih dahulu kemudian , login dengan user tersebut.
