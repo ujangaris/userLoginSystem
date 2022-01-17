@@ -129,3 +129,34 @@
         email: 'diki@mail.com',
         name: 'Diki Dikot',
         }
+
+## 19. Password Login Authentication
+
+    Documentation:  https://www.passportjs.org/docs/authenticate/
+
+                        app.post('/login',
+                        passport.authenticate('local'),
+                        function(req, res) {
+                            // If this function gets called, authentication was successful.
+                            // `req.user` contains the authenticated user.
+                            res.redirect('/users/' + req.user.username);
+                        });
+
+                    https://www.passportjs.org/docs/configure/
+
+                        passport.serializeUser(function(user, done) {
+                        done(null, user.id);
+                        });
+
+                        passport.deserializeUser(function(id, done) {
+                        User.findById(id, function(err, user) {
+                            done(err, user);
+                        });
+                        });
+    pengujian pada browser login :http://localhost:3000/users/login
+        login sebagai diki:
+            username: diki , password: admin0k8
+
+        jika berhasil akan ada alert success
+        note login akan berhasil pada user yang register setelah menggunakan hasing bcrypt
+        jika gagal login coba lakukan register terlebih dahulu kemudian , login dengan user tersebut.
